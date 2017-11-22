@@ -39,7 +39,7 @@ Run in photos or image
 
 $ ./darknet detect cfg/yolo.cfg yolo.weights data/<file-name>
 
-I recommend to take a look...https://pjreddie.com/darknet/yolo/ for more detalis of YOLO! 
+I recommend to take a look...https://pjreddie.com/darknet/yolo/ for more details of YOLO! 
 
 I think it is important to install a SSD and setup to work as the root directory. Also build a kernel and extra modules, you can do the last recommendation after o before build and run YOLO. Jetson only has 32gb.
 See this videos:
