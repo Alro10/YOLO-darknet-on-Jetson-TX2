@@ -9,11 +9,11 @@ $ git clone https://github.com/pjreddie/darknet.git
 
 $ cd darknet
 
-$ sudo sed 's/GPU=0/GPU=1/g' Makefile
+$ sudo sed -i 's/GPU=0/GPU=1/g' Makefile
 
-$ sudo sed 's/CUDNN=0/CUDNN=1/g' Makefile
+$ sudo sed -i 's/CUDNN=0/CUDNN=1/g' Makefile
 
-$ sudo sed 's/OPENCV=0/OPENCV=1/g' Makefile
+$ sudo sed -i 's/OPENCV=0/OPENCV=1/g' Makefile
 
 $ make -j4
 
