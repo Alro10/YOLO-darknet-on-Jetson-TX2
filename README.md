@@ -73,18 +73,18 @@ $ wget https://pjreddie.com/media/files/yolov3-tiny.weights
 
 ## Run on JETSON TX2 using onboard cam 
 
-**For yolov3:
+**For yolov3:**
 
 $ ./darknet detector demo cfg/coco.data cfg/yolov3.cfg yolov3.weights "nvcamerasrc ! video/x-raw(memory:NVMM), width=(int)1280, height=(int)720,format=(string)I420, framerate=(fraction)30/1 ! nvvidconv flip-method=0 ! video/x-raw, format=(string)BGRx ! videoconvert ! video/x-raw, format=(string)BGR ! appsink"
 
 
-**For tiny-yolov3:
+**For tiny-yolov3:**
 
 $ ./darknet detector demo cfg/coco.data cfg/yolov3-tiny.cfg yolov3-tiny.weights "nvcamerasrc ! video/x-raw(memory:NVMM), width=(int)1280, height=(int)720,format=(string)I420, framerate=(fraction)30/1 ! nvvidconv flip-method=0 ! video/x-raw, format=(string)BGRx ! videoconvert ! video/x-raw, format=(string)BGR ! appsink"
 
 You are able to change the resolution just modify this part: **width=(int)1280, height=(int)720**
 
-**Using usb webcam:
+**Using usb webcam:**
 
 $ ./darknet detector demo cfg/coco.data cfg/yolov3.cfg yolov3.weights /dev/video1
 
