@@ -51,7 +51,7 @@ https://www.youtube.com/watch?v=ZpQgRdg8RmA&t=4s
 
 After boot Jetson TX2 with Jetpack 3.2 (CUDA 9 and cuDNN 7) and install openCV (https://github.com/AlexanderRobles21/OpenCVTX2)
 
-**Build darknet:
+**Build darknet:**
 
 $ git clone https://github.com/pjreddie/darknet.git
 
