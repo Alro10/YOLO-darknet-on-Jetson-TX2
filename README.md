@@ -46,5 +46,47 @@ See this videos:
 
 https://www.youtube.com/watch?v=ZpQgRdg8RmA&t=4s
 
+
+# YOLOV3 on Jetson TX2 (last update)
+
+After boot Jetson TX2 with Jetpack 3.2 (CUDA 9 and cuDNN 7) and install openCV (https://github.com/AlexanderRobles21/OpenCVTX2)
+
+**Build darknet:
+
+$ git clone https://github.com/pjreddie/darknet.git
+
+$ cd darknet
+
+$ sudo sed -i 's/GPU=0/GPU=1/g' Makefile
+
+$ sudo sed -i 's/CUDNN=0/CUDNN=1/g' Makefile
+
+$ sudo sed -i 's/OPENCV=0/OPENCV=1/g' Makefile
+
+$ make -j4
+
+## Download weights 
+
+$ wget https://pjreddie.com/media/files/yolov3.weights
+
+$ wget https://pjreddie.com/media/files/yolov3-tiny.weights
+
+## Run on JETSON TX2 using onboard cam 
+
+**For yolov3:
+
+$ ./darknet detector demo cfg/coco.data cfg/yolov3.cfg yolov3.weights "nvcamerasrc ! video/x-raw(memory:NVMM), width=(int)1280, height=(int)720,format=(string)I420, framerate=(fraction)30/1 ! nvvidconv flip-method=0 ! video/x-raw, format=(string)BGRx ! videoconvert ! video/x-raw, format=(string)BGR ! appsink"
+
+
+**For tiny-yolov3:
+
+$ ./darknet detector demo cfg/coco.data cfg/yolov3-tiny.cfg yolov3-tiny.weights "nvcamerasrc ! video/x-raw(memory:NVMM), width=(int)1280, height=(int)720,format=(string)I420, framerate=(fraction)30/1 ! nvvidconv flip-method=0 ! video/x-raw, format=(string)BGRx ! videoconvert ! video/x-raw, format=(string)BGR ! appsink"
+
+You are able to change the resolution just modify this part: **width=(int)1280, height=(int)720**
+
+**Using usb webcam:
+
+$ ./darknet detector demo cfg/coco.data cfg/yolov3.cfg yolov3.weights /dev/video1
+
 This information was useful for your project? Consider to cite my repository! 
 
