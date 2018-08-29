@@ -1,8 +1,7 @@
 # YOLO-darknet-on-Jetson-TX2
-How to run YOLO on Jetson TX2
-
 ![Image of JetsonTX2](https://github.com/Alro10/YOLO-darknet-on-Jetson-TX2/blob/master/jetsontx2.jpg)
 
+How to run YOLO on Jetson TX2
 
 After boot (Jetpack 3.1) and install OPENCV...
 
