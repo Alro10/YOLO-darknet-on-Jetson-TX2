@@ -1,5 +1,5 @@
 # YOLO-darknet-on-Jetson-TX2
-![Image of JetsonTX2](https://github.com/Alro10/YOLO-darknet-on-Jetson-TX2/blob/master/jetsontx2.jpg)
+![Image of JetsonTX2](https://github.com/Alro10/YOLO-darknet-on-Jetson-TX2/blob/master/jetsontx2.jpg)<!-- .element height="80%" width="80%" -->
 
 How to run YOLO on Jetson TX2
 
