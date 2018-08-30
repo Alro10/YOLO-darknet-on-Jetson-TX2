@@ -1,5 +1,5 @@
 # YOLO-darknet-on-Jetson-TX2
-<img src="https://github.com/Alro10/YOLO-darknet-on-Jetson-TX2/blob/master/jetsontx2.jpg" alt="alt text" width="80%" height="80%">
+<img src="https://github.com/Alro10/YOLO-darknet-on-Jetson-TX2/blob/master/jetsontx2.jpg" alt="alt text" width="90%" height="80%">
 
 
 
