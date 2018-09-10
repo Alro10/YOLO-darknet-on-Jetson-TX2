@@ -58,7 +58,7 @@ https://www.youtube.com/watch?v=ZpQgRdg8RmA&t=4s
 # YOLOV3 on Jetson TX2 (last update)
 
 <p align="center">
-<img src="https://github.com/Alro10/YOLO-darknet-on-Jetson-TX2/blob/master/output1.jpg" alt="alt text" width="80%" height="60%">
+<img src="https://github.com/Alro10/YOLO-darknet-on-Jetson-TX2/blob/master/output1.jpg" alt="alt text" width="90%" height="70%">
 </p>
 
 
