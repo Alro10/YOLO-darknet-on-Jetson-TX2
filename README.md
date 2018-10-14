@@ -1,6 +1,6 @@
-# YOLO-darknet-on-Jetson-TX2
+# YOLO-darknet-on-Jetson-TX2 and on-Jetson-TX1
 
-Yolo darknet is an amazing algorithm that uses deep learning for real-time object detection but needs a good GPU, many CUDA cores. For **Jetson TX2 I would like to recommend to you use this repository if you want to achieve better performance, more fps, and detect more objects [real-time object detection on Jetson TX2](https://github.com/Alro10/realtime_object_detection)**
+Yolo darknet is an amazing algorithm that uses deep learning for real-time object detection but needs a good GPU, many CUDA cores. For **Jetson TX2 and TX1 I would like to recommend to you use this repository if you want to achieve better performance, more fps, and detect more objects [real-time object detection on Jetson TX2](https://github.com/Alro10/realtime_object_detection)**
 
 <p align="center">
 <img src="https://github.com/Alro10/YOLO-darknet-on-Jetson-TX2/blob/master/jetsontx2.jpg" alt="alt text" width="80%" height="60%">
@@ -30,6 +30,17 @@ You will have to download the pre-trained weight file yolo.weights or tiny-yolo 
 $ wget https://pjreddie.com/media/files/yolo.weights
 
 $ wget https://pjreddie.com/media/files/tiny-yolo-voc.weights
+
+For TX1 and change the batch size and subdivisions if you run out od memory:
+
+$ sudo nano cfg/yolov3.cfg
+ 
+increase the batch size and reduce the subdivisions:
+ 
+ #batch=64
+ batch=32
+ #subdvisions=16
+ subdivisions=32
 
 How to run YOLO using onboard camara Jetson TX2? It's a really hard question, I needed to find many sites but I found the right solution:
 
