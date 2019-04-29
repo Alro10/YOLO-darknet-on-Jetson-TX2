@@ -44,7 +44,7 @@ increase the batch size and reduce the subdivisions:
 
 ### How to run YOLO using onboard camara Jetson TX2? It's a really hard question, I needed to find many sites but I found the right solution:
 
-*overclock
+*overclock*
 ```
 $ sudo ./jetson_clocks.sh
 
@@ -151,5 +151,5 @@ $ ./darknet detector demo cfg/coco.data cfg/yolov3.cfg yolov3.weights /dev/video
 
 ```
 
-*This information was useful for your project? Consider to cite my repository! 
+*This information was useful for your project? Consider to cite my repository!*
 
